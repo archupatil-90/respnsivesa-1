@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#header{
+overflow: auto;
+background-color: #060a45;
+}
+#header nav{
+color:#fff;
+
+}
+#header nav h2{
+float: left;
+padding: 20px 5px;
+font-size: 15px;
+
+
+
+}
+#header nav ul{
+float: right;
+list-style-type: none;
+padding: 15px 0 ;
+font-size: 15px;
+
+
+}
+#header nav ul li{
+    display: inline-block;
+    margin: 0 24px;
+    font-size: 20px;
+}
+#header .toggler{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: none;
+}
+.toggler span{
+    width: 15px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    height: 2px;
+    padding: 0 5px;
+    background-color: black;
+}
+
+.container{
+    width:80%;
+    margin: auto;
+}
+/* .show{
+    direction: block;
+} */
+
+
+/* banner */
+#banner{
+    text-align: center;
+    padding:150px 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUHqHiLfB5sAJyqiapP47CtI6F2ToO9b2oA&usqp=CAU);
+   background-size: cover;
+   background-position: center;
+   color: #fff;
+
+}
+#banner h1{
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+#banner p{
+    padding:10px 0;
+    font-size: 15px;
+}
+
+/* skill */
+#skill  .skill-box{
+    width:25%;
+    float: left;
+    padding: 20px 5px;
+    text-align: center;
+    box-sizing: border-box;
+
+
+
+}
+#skill .skill-box h2{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+#skill  .skill-box i{
+    font-size: 3em;
+    padding: 10px 0;
+}
+
+/* media query */
+@media  only screen and (max-width:768px){
+    /* for banner */
+    #banner p{
+        font-size: 12px;
+    }
+    /* for skill */
+    #skill .skill-box{
+        width:50%;
+    }
+
+}
+@media  only screen and (max-width:425px){
+    /* header */
+    #header nav ul{
+        display: none;
+    }
+    
+    #header .toggler{
+        display:block;
+        float: right;
+
+    
+    }
+    /* for banner */
+    #banner p{
+        font-size: 10px;
+    }
+    #banner h1{
+        font-size: 20px;
+    }
+    /* for skill */
+    #skill .skill-box{
+        width:100%;
+    }
+
+}
